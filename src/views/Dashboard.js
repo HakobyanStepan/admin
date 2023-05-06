@@ -65,7 +65,7 @@ function Dashboard(props) {
   const handleAddItem = () => {
     if (nameInput && articleInput && countInput && priceInput) {
       const newItem = {
-        id: stateItems.length + 1,
+        id: Date.now(),
         name: nameInput,
         article: articleInput,
         count: countInput,
