@@ -1,0 +1,32 @@
+.item{
+    display: flex;  
+    padding: 10px;
+    width: 100%;
+    color: white;
+    align-items: center;
+    .name{
+        margin-left: 10px;
+        width: 32%;
+    }
+    .article{
+        width: 20%;
+    }
+    .count{
+        width: 20%;
+    }
+    .price{
+        width: 20%;
+    }
+    img{
+        margin-right: 5px;
+    }
+    .edit{
+        outline: none;
+        background-color: rgb(164, 191, 240);
+        border: none;
+        margin: 10px;
+        width: 24%;
+    }
+   
+
+}

@@ -1,0 +1,74 @@
+.mobile_cards {
+  display: none;
+  margin-top: 10px;
+}
+.checkedItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-color: rgb(48, 91, 211);
+  border-radius: 10px;
+  margin: 10px 0px;
+  img {
+    margin: 10px;
+  }
+  span {
+    color: white;
+  }
+  &:hover {
+    background-color: rgb(35, 70, 160);
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
+.addItems {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  align-items: center;
+  .edit {
+    outline: none;
+    background-color: rgb(164, 191, 240);
+    border: none;
+    margin: 10px;
+    width: 24%;
+    padding: 5px;
+  }
+}
+.addButton {
+  background-color: rgb(164, 191, 240);
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  outline: none !important;
+  width: 180px;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .desktop_cards {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 475px) {
+  .addItems {
+    flex-wrap: wrap;
+    .edit {
+      margin: 5px;
+      width: 70%;
+    }
+    img {
+      margin: auto;
+    }
+  }
+}

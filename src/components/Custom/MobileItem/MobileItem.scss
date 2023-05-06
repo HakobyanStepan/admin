@@ -1,0 +1,42 @@
+.mobile_item{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+    width: 49%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color:#062122;
+    .done{
+        margin: 15px auto 0px;
+    }
+    .checkbox_block{
+        display: flex;
+        gap: 5px;
+        justify-content: end;
+        margin-bottom: 10px;
+    }
+    .mobile_card_item{
+        display: flex;
+        justify-content: space-between;
+        span{
+            width: 46%;
+            padding: 10px 4px; 
+            font-size: 12px;
+            border-bottom: 1px solid rgba(245, 230, 230, 0.5);
+        }
+        .edit{
+            width: 46%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid;
+            background-color: rgb(164, 191, 240);;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+ .mobile_item{
+    width: 100%;
+ }
+}
+
